@@ -11,8 +11,6 @@
 
     <header>
         <div>
-            <img id="easter-egg" src="Images/Logos/logo-violet-clair.png" alt="Logo-Violet" />
-            <audio id="sound" src="Images/Sons/sound2.mp3" preload="auto"></audio>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
@@ -30,18 +28,18 @@
     <main id="top">
 
         <div id="home" class="home">
-            <img src="Images/Gifs/lucyna-and-black-cat-cyberpunk-edgerunners-moewalls-com (1) (2).gif" />
+            <img src="Images/Images/1.jpg" />
             <div>
                 <p>Hi, I'm Stanislas ROLLAND</p>
-                <p>I'm a student in my second year of a Computer Science degree at the IUT in Lannion. I'm passionate about development and data analysis, and I'm looking for a work-study placement in development or data administration, management and exploitation. This portfolio presents my projects, skills and interests. Let’s start scrolling !</p>
+                <p>I'm currently in my third year of a Bachelor's degree in Computer Science at the University Institute of Technology in Lannion, specialising in data administration, management and exploitation. I will soon be starting a four-month internship at NOKIA, but my future goal is to continue my studies next year at an engineering school. </p>
                 <div class="separation-line"></div>
                 <div class="social-icons-container-home">
                     <div class="social-icon-home">
-                        <div class="linkedin-icon-home" onclick="window.open('https://www.linkedin.com/in/stanislas-rolland-759a9b2ba/', '_blank')"></div>
+                        <div class="linkedin-icon-home" onclick="window.open('https://www.linkedin.com/in/stanislas-rolland-157476385/', '_blank')"></div>
                     </div>
         
                     <div class="social-icon-home">
-                        <div class="github-icon-home" onclick="window.open('https://github.com/PainAuBeurre/', '_blank')"></div>
+                        <div class="github-icon-home" onclick="window.open('https://github.com/Stanilou/', '_blank')"></div>
                     </div>
         
                     <div class="social-icon-home">
@@ -146,65 +144,119 @@
         </div>
 
         <div id="projects" class="projects">
-            <p>CHECK OUT SOME OF MY PROJECTS</p>
-            <div>
-                <div>
-                    <div class="project-item">
-                        <img src="Images/Images/projet-pact.jpg" />
-                        <div class="overlay-text">
-                            <p>P.A.C.T</p>
-                            <p>Web Development</p>
-                            <img src="Images/Icones/open-project.png" />
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <img src="Images/Images/projet-tictactoe.png" />
-                        <div class="overlay-text">
-                            <p>Tic Tac Toe</p>
-                            <p>Programming</p>
-                            <img src="Images/Icones/open-project.png" />
-                        </div>
-                    </div>
-                    <div class="project-item">
-                        <img src="Images/Images/projet-patio.jpg" />
-                        <div class="overlay-text">
-                            <p>Le Patio</p>
-                            <p>Programming</p>
-                            <img src="Images/Icones/open-project.png" />
-                        </div>
-                    </div>
+            <div class="projects-header">
+                <h2>CHECK OUT SOME OF MY PROJECTS</h2>
+            </div>
 
-                    <div class="project-item">
-                        <img src="Images/Images/projet-irisa.png" />
-                        <div class="overlay-text">
-                            <p>Irisa Publications</p>
-                            <p>Database</p>
-                            <img src="Images/Icones/open-project.png" />
+            <div class="projects-grid">
+                <div class="project-card" onclick="openModal(0)">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=500&fit=crop" alt="Développement Application">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+                            </svg>
                         </div>
+                        <h3 class="project-title">Réaliser un développement d'application</h3>
                     </div>
-                    <div class="project-item">  
-                        <img src="Images/Images/projet-tabaskho.png" />
-                        <div class="overlay-text">
-                            <p>Tabas'KHO</p>
-                            <p>Web Development</p>
-                            <img src="Images/Icones/open-project.png" />
+                </div>
+
+                <div class="project-card" onclick="openModal(1)">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=500&h=500&fit=crop" alt="Optimiser Application">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                            </svg>
                         </div>
+                        <h3 class="project-title">Optimiser des applications informatiques</h3>
                     </div>
-                    <div class="project-item">
-                        <img src="Images/Images/projet-teambuilding.png" />
-                        <div class="overlay-text">
-                            <p>Cap Sur Bréhat</p>
-                            <p>TeamBuilding</p>
-                            <img src="Images/Icones/open-project.png" />
+                </div>
+
+                <div class="project-card" onclick="openModal(2)">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=500&h=500&fit=crop" alt="Systèmes Communicants">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 01-3-3m3 3a3 3 0 100 6h13.5a3 3 0 100-6m-16.5-3a3 3 0 013-3h13.5a3 3 0 013 3m-19.5 0a4.5 4.5 0 01.9-2.7L5.737 5.1a3.375 3.375 0 012.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 01.9 2.7m0 0a3 3 0 01-3 3m0 3h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008zm-3 6h.008v.008h-.008v-.008zm0-6h.008v.008h-.008v-.008z" />
+                            </svg>
                         </div>
+                        <h3 class="project-title">Administrer des systèmes communicants complexes</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal(3)">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500&h=500&fit=crop" alt="Gérer Données">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Gérer des données de l'information</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal(4)">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=500&h=500&fit=crop" alt="Conduire Projet">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 00.75-.75 2.25 2.25 0 00-.1-.664m-5.8 0A2.251 2.251 0 0113.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25zM6.75 12h.008v.008H6.75V12zm0 3h.008v.008H6.75V15zm0 3h.008v.008H6.75V18z" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Conduire un projet</h3>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="openModal(5)">
+                    <img class="project-image" src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=500&h=500&fit=crop" alt="Travail Équipe">
+                    <div class="project-content">
+                        <div class="project-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
+                            </svg>
+                        </div>
+                        <h3 class="project-title">Travailler dans une organisation informatique</h3>
                     </div>
                 </div>
             </div>
-            
+        </div>
+
+        <div id="project-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" onclick="closeModal()">&times;</span>
+                <h2 id="modal-title"></h2>
+                <p class="modal-type" id="modal-type"></p>
+                <p class="modal-description" id="modal-description"></p>
+            </div>
         </div>
 
         <div id="interests" class="interests">
-            
+            <div class="projects-header interest-header">
+                <h2>CENTRES D'INTÉRÊT</h2>
+            </div>
+            <div class="interests-content">
+                <p>Au-delà de l'informatique, j'ai possède différents centres d'intérêt qui enrichissent ma vie quotidienne et contribuent à mon développement personnel. Ces derniers m'aident à maintenir un équilibre sain entre ma vie professionnelle et ma vie privée, et m'apportent de nouvelles perspectives dans mon travail.</p>
+
+                <div class="interests-list">
+                    <div class="interest-item">
+                        <strong>Musique</strong> — La musique occupe une place essentielle dans ma vie quotidienne. Que je sois en train de coder, de me détendre ou de jouer à un jeu vidéo, la musique adaptée m'aide à rester concentré et inspiré tout au long de la journée. Vous pouvez découvrir mes playlists sur <a href="https://open.spotify.com/user/31ytoiczz57f5az4dngpeirrhlza?si=4c3e738cd65644fe" target="_blank">mon profil Spotify</a> !
+                    </div>
+
+                    <div class="interest-item">
+                        <strong>Lecture</strong> — I'm passionate about reading, exploring diverse genres from science fiction to technical documentation. Books allow me to escape into different worlds while constantly learning new perspectives and ideas.
+                    </div>
+
+                    <div class="interest-item">
+                        <strong>Jeux Vidéo</strong> — Les jeux vidéo sont un passe temps pour moi, je joue aussi bien à des jeux solo qu'à des jeux en ligne, et j'apprécie différents genres tels que les jeux de stratégie, les jeux de tir à la première personne, les jeux de survie, etc.
+                    </div>
+
+                    <div class="interest-item">
+                        <strong>Animaux</strong> — J'ai une profonde admiration pour les animaux et la nature. Passer du temps avec les animaux m'apporte la paix et me rappelle l'importance de prendre soin de notre environnement et de ses habitants. N'hésitez pas à <a href="Images/Images/Ava-et-Zahia.jpg" target="_blank">découvrir mes chats</a> !
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div id="contact" class="contact-form">
@@ -257,11 +309,11 @@
 
         <div class="social-icons-container">
             <div class="social-icon">
-                <div class="linkedin-icon" onclick="window.open('https://www.linkedin.com/in/stanislas-rolland-759a9b2ba/', '_blank')"></div>
+                <div class="linkedin-icon" onclick="window.open('https://www.linkedin.com/in/stanislas-rolland-157476385/', '_blank')"></div>
             </div>
 
             <div class="social-icon">
-                <div class="github-icon" onclick="window.open('https://github.com/PainAuBeurre/', '_blank')"></div>
+                <div class="github-icon" onclick="window.open('https://github.com/Stanilou/', '_blank')"></div>
             </div>
 
             <div class="social-icon">
@@ -280,17 +332,6 @@
         </div>
 
     </footer>     
-    
-    <div id="project-modal" class="modal">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2 id="modal-title"></h2>
-            <p id="modal-type"></p> 
-            <img id="modal-image" src="" alt="Project image">
-            <p id="modal-description"></p>
-        </div>
-    </div>
-    
 
 </body>
 </html>
