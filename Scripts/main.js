@@ -58,6 +58,37 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     /* ==========================
+       DISCORD NOTIFICATION
+    ========================== */
+    function showDiscordNotification() {
+        // Créer la notification si elle n'existe pas
+        let notification = document.querySelector('.discord-notification');
+        if (!notification) {
+            notification = document.createElement('div');
+            notification.className = 'discord-notification';
+            notification.textContent = '✓ Identifiant Discord copié !';
+            document.body.appendChild(notification);
+        }
+
+        // Afficher la notification
+        notification.classList.add('show');
+
+        // La masquer après 3 secondes
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 3000);
+    }
+
+    // Ajouter l'événement aux icônes Discord
+    const discordIcons = document.querySelectorAll('.discord-icon-home, .discord-icon');
+    discordIcons.forEach(icon => {
+        icon.parentElement.addEventListener('click', () => {
+            navigator.clipboard.writeText('stanilou');
+            showDiscordNotification();
+        });
+    });
+
+    /* ==========================
        PROJECT MODAL
     ========================== */
     const projectDetails = [
@@ -93,7 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     ];
 
-    // ✅ Rendre les fonctions globales
     window.openModal = function(index) {
         const data = projectDetails[index];
         if (!data) return;
@@ -108,7 +138,6 @@ document.addEventListener("DOMContentLoaded", () => {
         document.getElementById("project-modal").style.display = "none";
     };
 
-    // Fermer la modal en cliquant à l'extérieur
     window.addEventListener("click", (e) => {
         const modal = document.getElementById("project-modal");
         if (e.target === modal) {

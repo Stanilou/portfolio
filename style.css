@@ -948,6 +948,31 @@ footer {
     background-image: url(Images/Icones/discord-violet-clair.png);
 }
 
+/* NOTIFICATION DISCORD
+******************************/
+.discord-notification {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: linear-gradient(135deg, var(--violet-clair), var(--violet-sombre));
+    color: var(--blanc);
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(114, 2, 145, 0.4);
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+.discord-notification.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 footer > div > p > span {
     color: var(--blanc);
 }
