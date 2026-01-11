@@ -267,6 +267,15 @@
 
             <div class="form-contact-infos">
                 <form action="https://formsubmit.co/stanislasrolland05@gmail.com" method="POST">
+                    <!-- Redirection après soumission -->
+                    <input type="hidden" name="_next" value="https://stanilou.github.io/Portfolio_V2">
+                    
+                    <!-- Désactiver le captcha (optionnel) -->
+                    <input type="hidden" name="_captcha" value="false">
+                    
+                    <!-- Template personnalisé pour l'email (optionnel) -->
+                    <input type="hidden" name="_template" value="table">
+                    
                     <div>
                         <label for="name">Nom <span>*</span></label>
                         <input type="text" id="name" name="name" required>
@@ -274,7 +283,7 @@
 
                     <div>
                         <label for="email">Email <span>*</span></label>
-                        <input type="text" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required>
                     </div>
 
                     <div>

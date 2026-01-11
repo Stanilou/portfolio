@@ -111,7 +111,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 <br><br>
                 Cela passe par le choix d'<strong>algorithmes efficaces</strong>, de <strong>structures de données adaptées</strong> et par une écriture de code <strong>claire, optimisée</strong> et bien <strong>documentée</strong>.
                 <br><br>
-                Cette compétence me permet de proposer des solutions performantes, répondant aux contraintes techniques et aux exigences d'efficacité et j'ai eu l'occasion de la mettre en pratique lors de la réalisation de diverses expériences et projets académiques tout au long de ma formation comme la création d'un <strong>algorithme permettant de résoudre <a href="https://fr.wikipedia.org/wiki/Problème_du_cavalier_d%27Euler" target="_blank">le problème du cavalier</a></strong>.
+                Cette compétence me permet de proposer des solutions performantes, répondant aux contraintes techniques et aux exigences d'efficacité et j'ai eu l'occasion de la mettre en pratique lors de la réalisation de diverses expériences et projets académiques tout au long de ma formation comme la création d'un <strong>algorithme permettant de résoudre <a href="https://fr.wikipedia.org/wiki/Problème_du_cavalier_d%27Euler" target="_blank">le problème du cavalier</a></strong> mais bien entendu, cette compétence a été mobilisée dans l'ensemble de mes projets de développement d'application.
             `
         },
         {
@@ -121,6 +121,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 Ma formation m'a permis de développer des compétences en administration des <strong>systèmes et réseaux</strong>. Je suis capable d'installer, configurer et maintenir des environnements informatiques, aussi bien sur des systèmes <strong>Linux</strong> que <strong>Windows</strong>.
                 <br><br>
                 J'ai également abordé des notions de <strong>virtualisation</strong>, de <strong>services réseau</strong> et de <strong>sécurité</strong>, me permettant d'assurer le bon fonctionnement et la fiabilité des infrastructures informatiques.
+                <br><br>
+                J'ai pu mettre en pratique cette compétence lors de la configuration et de la gestion d'un <strong>serveur web Apache</strong> dans le cadre d'un projet académique, où j'ai assuré le déploiement et la maintenance du serveur, ainsi que la gestion des accès et de la sécurité associée ou bien lors de la mise en place d'une machine virtuelle lors d'un stage au sein de l'entreprise <strong><a href="https://www.norgayitservices.com/" target="_blank">NORGAY IT & Digital Services</a></strong> afin de recréer un environnement d'exécution d'applications métier développées en Visual Basic.
             `
         },
         {
