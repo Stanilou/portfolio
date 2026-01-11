@@ -91,27 +91,27 @@ document.addEventListener("DOMContentLoaded", () => {
     /* ==========================
        FORM NOTIFICATION
     ========================== */
-    const form = document.querySelector('form');
-    
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            // Créer la notification
-            let notification = document.querySelector('.form-notification');
-            if (!notification) {
-                notification = document.createElement('div');
-                notification.className = 'form-notification';
-                notification.textContent = '✓ Message envoyé avec succès !';
-                document.body.appendChild(notification);
-            }
+    // Vérifier si on revient après l'envoi du formulaire
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('sent') === 'true') {
+        // Créer et afficher la notification
+        let notification = document.querySelector('.form-notification');
+        if (!notification) {
+            notification = document.createElement('div');
+            notification.className = 'form-notification';
+            notification.textContent = '✓ Message envoyé avec succès !';
+            document.body.appendChild(notification);
+        }
 
-            // Afficher la notification
-            notification.classList.add('show');
+        notification.classList.add('show');
 
-            // La masquer après 3 secondes
-            setTimeout(() => {
-                notification.classList.remove('show');
-            }, 3000);
-        });
+        // La masquer après 3 secondes
+        setTimeout(() => {
+            notification.classList.remove('show');
+        }, 3000);
+
+        // Nettoyer l'URL (enlever le paramètre ?sent=true)
+        window.history.replaceState({}, document.title, window.location.pathname);
     }
 
     /* ==========================
